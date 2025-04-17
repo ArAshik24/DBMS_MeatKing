@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consumer Dashboard - MEAT KING</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" />
+  <style>
+    body {
+      background: #f4f6f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      position: fixed;
+      background: #fff;
+      border-right: 1px solid #e0e0e0;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 15px 25px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background: #f0f0f0;
+    }
+
+    .sidebar .active {
+      background: #e0e0e0;
+      font-weight: bold;
+    }
+
+    .topbar {
+      margin-left: 250px;
+      height: 60px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .content {
+      margin-left: 250px;
+      padding: 30px;
+    }
+
+    .card-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="text-center mb-4">
+      <h4 class="fw-bold">MEAT KING</h4>
+    </div>
+    <a class="active" href="#"><i class='bx bx-home-alt'></i> Dashboard</a>
+    <a href="#"><i class='bx bx-shopping-bag'></i> My Orders</a>
+    <a href="#"><i class='bx bx-heart'></i> Wishlist</a>
+    <a href="#"><i class='bx bx-wallet'></i> Transactions</a>
+    <a href="#"><i class='bx bx-support'></i> Support</a>
+  </div>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="d-flex align-items-center">
+      <i class='bx bx-menu fs-4 me-3'></i>
+      <h5 class="mb-0">Consumer Panel</h5>
+    </div>
+    <div class="d-flex align-items-center">
+      <div class="dropdown">
+        <a class="d-flex align-items-center text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+          <img src="../../images/faces/face3.jpg" alt="Profile" class="rounded-circle" width="35" />
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end shadow">
+          <li class="dropdown-header text-center">
+            <strong>Consumer</strong><br>
+            <small>consumer@example.com</small>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#"><i class='bx bx-cog'></i> Settings</a></li>
+          <li><a class="dropdown-item" href="#"><i class='bx bx-log-out'></i> Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <div class="card-box">
+          <h6>My Orders</h6>
+          <h3>58</h3>
+          <small class="text-success">+3.2% (30 days)</small>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card-box">
+          <h6>Active Orders</h6>
+          <h3>4</h3>
+          <small class="text-warning">In progress</small>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card-box">
+          <h6>Spent</h6>
+          <h3>৳ 35,720</h3>
+          <small class="text-success">+5.4% (30 days)</small>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card-box">
+          <h6>Wishlist</h6>
+          <h3>12 items</h3>
+          <small class="text-info">Updated</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
